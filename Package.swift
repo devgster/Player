@@ -9,6 +9,9 @@ let package = Package(
     products: [
       .library(name: "Player", targets: ["Player"])
     ],
+    dependencies: [
+        .package(url: "https://github.com/devgster/GCDWebServer.git", branch: "master") // GCDWebServer 추가
+    ],
     targets: [
       .target(
           name: "Player",
